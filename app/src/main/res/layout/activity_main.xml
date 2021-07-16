@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_t"
+        android:drawablePadding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_40"
+        android:text="@string/what_topic_do_you_love"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/barB"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_t"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/books"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/books"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/podcast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/books"
+        app:layout_constraintEnd_toEndOf="@+id/books"
+        app:layout_constraintTop_toBottomOf="@+id/books"
+        />
+
+
+
+    <TextView
+        android:id="@+id/podcast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/podcasts"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/books"
+        app:layout_constraintTop_toBottomOf="@+id/bar" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/podcast"
+        app:layout_constraintEnd_toEndOf="@+id/podcast"
+        app:layout_constraintTop_toBottomOf="@+id/podcast"
+        />
+
+    <TextView
+        android:id="@+id/News"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/news"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/books" />
+    <TextView
+        android:id="@+id/business"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/business"
+        android:textColor="@color/blue_t"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/News"
+        app:layout_constraintTop_toBottomOf="@+id/podcast" />
+
+    <TextView
+        android:id="@+id/Entertainment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/entertainment"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/Sports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/News" />
+    <TextView
+        android:id="@+id/Sports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/sports"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Entertainment"
+        app:layout_constraintTop_toBottomOf="@+id/business" />
+
+
+    <TextView
+        android:id="@+id/Technology"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/technology"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/Pronunciation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Entertainment" />
+    <TextView
+        android:id="@+id/Pronunciation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:text="@string/pronunciation"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Technology"
+        app:layout_constraintTop_toBottomOf="@+id/Sports" />
+
+
+    <TextView
+        android:id="@+id/Grammar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/grammar"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/blue_t"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toStartOf="@+id/Health"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Technology" />
+    <TextView
+        android:id="@+id/Health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/blue_b"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/health"
+        android:textColor="@color/blue_t"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Grammar"
+        app:layout_constraintTop_toBottomOf="@+id/Pronunciation" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/News"
+        app:layout_constraintEnd_toEndOf="@+id/News"
+        app:layout_constraintTop_toBottomOf="@+id/News"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/business"
+        app:layout_constraintEnd_toEndOf="@+id/business"
+        app:layout_constraintTop_toBottomOf="@+id/business"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Entertainment"
+        app:layout_constraintEnd_toEndOf="@+id/Entertainment"
+        app:layout_constraintTop_toBottomOf="@+id/Entertainment"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Sports"
+        app:layout_constraintEnd_toEndOf="@+id/Sports"
+        app:layout_constraintTop_toBottomOf="@+id/Sports"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Technology"
+        app:layout_constraintEnd_toEndOf="@+id/Technology"
+        app:layout_constraintTop_toBottomOf="@+id/Technology"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Pronunciation"
+        app:layout_constraintEnd_toEndOf="@+id/Pronunciation"
+        app:layout_constraintTop_toBottomOf="@+id/Pronunciation"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Grammar"
+        app:layout_constraintEnd_toEndOf="@+id/Grammar"
+        app:layout_constraintTop_toBottomOf="@+id/Grammar"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_b"
+        app:layout_constraintStart_toStartOf="@+id/Health"
+        app:layout_constraintEnd_toEndOf="@+id/Health"
+        app:layout_constraintTop_toBottomOf="@+id/Health"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
